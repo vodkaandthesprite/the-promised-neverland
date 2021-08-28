@@ -1,0 +1,167 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-Light.ttf");
+}
+
+body {
+    margin: 0;
+    background: #cbc5c1;
+}
+
+header {
+    display: flex;
+    border-radius: 0 0 calc(20 / 1920 * 100vw) calc(20 / 1920 * 100vw);
+    font-family: Montserrat;
+}
+
+ol {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:calc(125 / 1920 * 100vw);
+    font-size: calc(45 / 1920 * 100vw);
+    background: #5b5549;
+    color: #cbc5c1;
+    list-style-type: none;
+}
+
+#main {
+    width: calc(608 / 1920 * 100vw);
+    border-radius: 0 0 0 calc(20 / 1920 * 100vw) ;
+}
+
+#watch {
+    width: calc(717 / 1920 * 100vw);
+    border: 0px solid #524d42;
+    border-right-width: 5px;
+    border-left-width: 5px;
+}
+
+#manga {
+    width: calc(458 / 1920 * 100vw);
+}
+
+#img2 {
+    width: calc(138 / 1920 * 100vw);
+    background-image: url("../img/user2.svg");
+    background-size: cover;
+    border-radius: 0 0 calc(20 / 1920 * 100vw) 0;
+}
+
+section {
+    font-family: Montserrat;
+}
+
+#frame {
+    background-color: #5b5549;
+    width: calc((1338 - 31) / 1920 * 100vw);
+    height: calc(873 / 1920 * 100vw);
+    margin: auto;
+    padding-left: calc(15 / 1920 * 100vw);
+    padding-right: calc(16 / 1920 * 100vw);
+    border-radius: calc(5 / 1920 * 100vw);
+}
+
+h1 {
+    font-size: calc(24 / 1920 * 100vw);
+    width: calc(661 / 1920 * 100vw);
+    height: calc(22 / 1920 * 100vw);
+    color: #cbc5c1;
+    padding-top: calc(15 / 1920 * 100vw);
+    padding-right: calc(784 / 1920 * 100vw);
+    margin-top: calc(36 / 1920 * 100vw);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: calc(18 / 1920 * 100vw);
+}
+
+.explanation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(23 / 1920 * 100vw);
+    font-size: calc(22 / 1920 * 100vw);
+    list-style-type: none;
+    color: #cbc5c1;
+}
+
+#section-bg {
+    position: absolute;
+    background: url("../img/manga/manga-sc.svg");
+    background-size: cover;
+    width: calc(1297 / 1920 * 100vw);
+    height: calc(724 / 1920 * 100vw);
+    top: calc(255 / 1920 * 100vw);
+    right: calc(308 / 1920 * 100vw);
+    bottom: calc(101 / 1920 * 100vw);
+    left: calc(310 / 1920 * 100vw);
+    /*margin: auto;*/
+}
+
+button {
+    position: absolute;
+    top: calc(985 / 1920 * 100vw);
+    right: calc(772 / 1920 * 100vw);
+    bottom: calc(65 / 1920 * 100vw);
+    left: calc(782 / 1920 * 100vw);
+    width: calc(365 / 1920 * 100vw);
+    height: calc(32 / 1920 * 100vw);
+    background: #6C5748;
+    border: 2px solid #524d42;
+    border-radius: calc(10 / 1920 * 100vw);
+    align-items: center;
+    text-align: center;
+    color: #cbc5c1;
+    font-size: calc(18 / 1920 * 100vw);
+}
+
+.arrow {
+    position: absolute;
+    background: url("../img/manga/arrow.svg");
+    background-size: cover;
+    width: calc(37 / 1920 * 100vw);
+    height: calc(33 / 1920 * 100vw);
+}
+
+/*#ar1 {*/
+/*    top: calc(983 / 1920 * 100vw);*/
+/*    right: calc(1056 / 1920 * 100vw);*/
+/*    bottom: calc(65 / 1920 * 100vw);*/
+/*    left: calc(826 / 1920 * 100vw);*/
+/*}*/
+
+/*#ar2 {*/
+/*    top: calc(985 / 1920 * 100vw);*/
+/*    right: calc(816 / 1920 * 100vw);*/
+/*    bottom: calc(65 / 1920 * 100vw);*/
+/*    left: calc(1086 / 1920 * 100vw);*/
+/*}*/
+
+footer {
+    text-align: center;
+    font-family: Montserrat;
+    width: calc(458 / 1920 * 100vw);
+    height: calc(28 / 1920 * 100vw);
+    font-size: calc(24 / 1920 * 100vw);
+    margin-right: calc(740 / 1920 * 100vw);
+    margin-left: calc(722 / 1920 * 100vw);
+}

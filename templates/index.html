@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Main</title>
-        <link rel="stylesheet" href="../static/css/index.css">
+<html>
+   <head>
+        <meta charset="utf-8">
+        <title>The Promised Neverland</title>
+       <link rel="stylesheet" href="../static/css/index.css">
     </head>
     <body>
-        <h1>Hello, {{ namehtml }}!</h1>
+    <header>
+        <ol class="menu">
+            <a href="index.html" target="_self"><li class="menu-item" id="main">Главная</li></a>
+            <a href="watch.html" target="_self"><li class="menu-item" id="watch">Смотреть</li></a> <!--test js-->
+            <a href="manga.html" target="_self"><li class="menu-item" id="manga">Манга</li></a>
+            <li class="menu-item" id="img2" onclick="enter()"></li>
+        </ol>
+        <div id="author">
+            <form action="">
+                <div id="enterance">Вход</div>
+                <input id="email" class="ent-menu margin" type="text" placeholder="Электронная почта" >
+                <input id="password" class="ent-menu margin" type="text" placeholder="Пароль" >
+                <div id="trouble" class="margin">Проблемы со входом?</div>
+                <input class="btns margin" id="enter" type="submit" value="Войти">
+                <input class="btns margin" id="google" type="submit" value="Войти через Google">
+                <input class="btns" id="facebook" type="submit" value="Войти через Facebook">
+            </form>
+        </div>
+    </header>
+    <section>
+        <h1 class="logo">Обещанный Неверленд</h1>
+        <h2 id="logo-eng">The Promised Neverland</h2>
+        <div class="content">
+            <p class="quote">
+                Нам не изменить нашего прошлого и
+                <br>
+                ничем не заменить погибших друзей. Но
+                <br>
+                мы можем осуществить их мечты!
+            </p>
+            <p class="quote quote-author">- Эмма</p>
+            <a href="watch.html" target="_self"><button id="watch-bt">
+                Смотреть<br/>сейчас
+            </button>
+            </a>
+        </div>
+        </section>
+    <footer>
+        <div class="footer">
+            <p>Powered by Mel. All rights reserved. ©</p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
     </body>
 </html>
