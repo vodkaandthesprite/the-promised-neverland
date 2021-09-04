@@ -6,12 +6,16 @@
 // 		break;
 // 	}
 // }
-const Season2Btn = document.getElementById("s2");
-Season2Btn.addEventListener("click", test);
-function test() {
-    Season2Btn.style.backgroundColor = "red";
-    group.forEach(test2)
-    function test2() {
-
-    }
+let seasons = document.getElementsByClassName("season");
+// seasons.forEach(makeActive);
+for (let i = 0;seasons.length;i++) {
+    seasons[i].style.backgroundColor = ("#cbc5c1");
+    seasons[i].style.color = ("#524d42");
 }
+// function makeActive(season) {
+//     season.addEventListener("click", reColor);
+//     function reColor() {
+//         season.style.backgroundColor = ("#cbc5c1");
+//         season.style.color = ("#524d42");
+//     }
+// }
