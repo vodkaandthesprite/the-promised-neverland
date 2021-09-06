@@ -14,7 +14,7 @@ for (let i = 0;seasons.length;i++) {
     function s_reColor(ActiveBtn) {
         seasons[i].style.backgroundColor = ("#cbc5c1");
         seasons[i].style.color = ("#524d42");
-        s_reColor()[i].addEventListener("click", ActiveBtn);
+        seasons[i].addEventListener("click", ActiveBtn);
         function ActiveBtn() {
             seasons[i].style.backgroundColor = ("#524d42");
             seasons[i].style.color = ("#cbc5c1");
