@@ -11,9 +11,14 @@ function enter(){
 let seasons = document.getElementsByClassName("season");
 for (let i = 0;seasons.length;i++) {
     seasons[i].addEventListener("click", s_reColor);
-    function s_reColor() {
+    function s_reColor(ActiveBtn) {
         seasons[i].style.backgroundColor = ("#cbc5c1");
         seasons[i].style.color = ("#524d42");
+        s_reColor()[i].addEventListener("click", ActiveBtn);
+        function ActiveBtn() {
+            seasons[i].style.backgroundColor = ("#524d42");
+            seasons[i].style.color = ("#cbc5c1");
+        }
     }
 }
 let episodes = document.getElementsByClassName("episode");
