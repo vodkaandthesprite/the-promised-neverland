@@ -3,14 +3,18 @@
 //     return 0;
 // }
 
-let seasons = document.querySelectorAll(".season");
-let episodes = document.querySelectorAll(".episode");
-const actives = document.querySelectorAll(".season, .episode");
-seasons.forEach(trigger);
+function getAll(selector) {
+    return document.querySelectorAll(selector);
+}
+// let seasons = getAll(".season");
+// let episodes = getAll(".episode");
+// const actives = getAll(".season, .episode");
+getAll(".season").forEach(trigger);
 function trigger(active) {
     active.addEventListener("click", reColor);
     function reColor() {
-        seasons.forEach(makePassive);
+        console.log(active.srcObject);
+        getAll(".season").forEach(makePassive);
         function makePassive(season) {
             season.style.backgroundColor = "#524d42";
             season.style.color = "#cbc5c1";
