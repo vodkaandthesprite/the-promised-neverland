@@ -12,5 +12,10 @@ function trigger(active) {
     function reColor() {
         active.style.backgroundColor = "#cbc5c1";
         active.style.color = "#524d42";
+        active.addEventListener("click", unReColor);
+        function unReColor() {
+            active.style.backgroundColor = "#524d42";
+            active.style.color = "#cbc5c1";
+        }
     }
 }
