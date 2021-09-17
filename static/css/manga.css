@@ -114,7 +114,6 @@ ul {
     right: calc(308 / 1920 * 100vw);
     bottom: calc(101 / 1920 * 100vw);
     left: calc(310 / 1920 * 100vw);
-    /*margin: auto;*/
 }
 
 button {
@@ -142,19 +141,19 @@ button {
     height: calc(33 / 1920 * 100vw);
 }
 
-/*#ar1 {*/
-/*    top: calc(983 / 1920 * 100vw);*/
-/*    right: calc(1056 / 1920 * 100vw);*/
-/*    bottom: calc(65 / 1920 * 100vw);*/
-/*    left: calc(826 / 1920 * 100vw);*/
-/*}*/
+#ar1 {
+    position: absolute;
+    top: calc(0 / 1920 * 100vw);
+    bottom: calc(0 / 1920 * 100vw);
+}
 
-/*#ar2 {*/
-/*    top: calc(985 / 1920 * 100vw);*/
-/*    right: calc(816 / 1920 * 100vw);*/
-/*    bottom: calc(65 / 1920 * 100vw);*/
-/*    left: calc(1086 / 1920 * 100vw);*/
-/*}*/
+#ar2 {
+    position: absolute;
+    top: calc(0 / 1920 * 100vw);
+    right: calc(202 / 1920 * 100vw);
+    bottom: calc(0 / 1920 * 100vw);
+    left: calc(286 / 1920 * 100vw);
+}
 
 footer {
     text-align: center;
