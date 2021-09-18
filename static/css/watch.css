@@ -109,8 +109,7 @@ h1 {
     justify-content: flex-start;
     align-items: center;
 }
-
-.season {
+.season, .episode {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,12 +117,15 @@ h1 {
     font-size: calc(17 / 1920 * 100vw);
     color: #cbc5c1;
     background: #524d42;
-    width: calc(121 / 1920 *100vw);
-    height: calc(37 / 1920 * 100vw);
+    border-radius: calc(5 / 1920 * 100vw);
+    width: calc(122 / 1920 * 100vw);
+    height: calc(32 / 1920 * 100vw);
+}
+
+.season {
     margin-right: calc(24 / 1920 * 100vw);
     margin-bottom: calc(14 / 1920 * 100vw);
     margin-top: calc(17 / 1920 * 100vw);
-    border-radius: calc(5 / 1920 * 100vw);
 }
 
 #player {
@@ -148,18 +150,8 @@ h1 {
 }
 
 .episode {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Montserrat;
-    font-size: calc(17 / 1920 * 100vw);
-    color: #cbc5c1;
-    background: #524d42;
-    width: calc(122 / 1920 * 100vw);
-    height: calc(32 / 1920 * 100vw);
     margin-right: calc(14 / 1920 * 100vw);
     margin-top: calc(23 / 1920 * 100vw);
-    border-radius: calc(5 / 1920 * 100vw);
 }
 
 #ep-menu {
