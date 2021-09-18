@@ -109,6 +109,7 @@ h1 {
     justify-content: flex-start;
     align-items: center;
 }
+
 .season, .episode {
     display: flex;
     align-items: center;
@@ -120,6 +121,11 @@ h1 {
     border-radius: calc(5 / 1920 * 100vw);
     width: calc(122 / 1920 * 100vw);
     height: calc(32 / 1920 * 100vw);
+}
+
+.active {
+    color: #524d42;
+    background: #cbc5c1;
 }
 
 .season {
@@ -160,6 +166,10 @@ h1 {
     justify-content: flex-start;
 }
 
+.episode:hover, .season:hover, .menu-item:hover {
+    background: #6C5748;
+}
+
 footer {
     text-align: center;
     font-family: Montserrat;
@@ -168,8 +178,4 @@ footer {
     font-size: calc(24 / 1920 * 100vw);
     margin-right: calc(740 / 1920 * 100vw);
     margin-left: calc(722 / 1920 * 100vw);
-}
-
-.episode:hover, .season:hover, .menu-item:hover {
-    background: #6C5748;
 }

@@ -1,30 +1,29 @@
-const entrance = document.getElementById("author"); //header
-console.log(enter());
-function enter() {
-    if (entrance.style.display === 'block') {
-        entrance.style.display = 'none';
-    } else {
-        entrance.style.display = 'block';
-    }
-}
+// const entrance = document.getElementById("author"); //header
+// console.log(enter());
+// function enter() {
+//     if (entrance.style.display === 'block') {
+//         entrance.style.display = 'none';
+//     } else {
+//         entrance.style.display = 'block';
+//     }
+// }
 //watch page btns
 function getAll(selector) {
     return document.querySelectorAll(selector);
 }
-getAll(".season").forEach(trigger);
-getAll(".episode").forEach(trigger);
+const actives = getAll(".season, .episode");
+actives.forEach(trigger);
 function trigger(active) {
     active.addEventListener("click", reColor);
     function reColor() {
-        // console.log(active.srcObject);
-        getAll(".season").forEach(makePassive);
-        getAll(".episode").forEach(makePassive);
-        function makePassive(elements) {
-            elements.style.backgroundColor = "#524d42";
-            elements.style.color = "#cbc5c1";
+        console.log(active);
+        let clickedClass = active.classList[0];
+        let elements = getAll(`.${clickedClass}`);
+        elements.forEach(makePassive);
+        function makePassive(element) {
+            element.classList.remove("active");
         }
-        active.style.backgroundColor = "#cbc5c1";
-        active.style.color = "#524d42";
+        active.classList.add("active");
     }
 }
 // let seasons = document.getElementsByClassName("season");
