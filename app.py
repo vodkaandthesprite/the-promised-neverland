@@ -1,7 +1,7 @@
 from flask import Flask, render_template
+from test import *
 
 app = Flask(__name__)
-name = "line"
 
 
 @app.route('/')
@@ -17,6 +17,15 @@ def watch():
 @app.route('/mangapage')
 def manga():
     return render_template("manga.html")
+
+
+@app.route('/test')
+def test():
+    return render_template("test.html")
+
+@app.route('/Odinn')
+def test1():
+    return render_template("test.html", character=Odinn)
 
 
 if __name__ == '__main__':

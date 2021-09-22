@@ -123,9 +123,9 @@ h1 {
     height: calc(32 / 1920 * 100vw);
 }
 
-.active {
-    color: #524d42;
-    background: #cbc5c1;
+.active, .active:hover {
+    color: #524d42 !important;
+    background: #cbc5c1 !important;
 }
 
 .season {
@@ -166,7 +166,7 @@ h1 {
     justify-content: flex-start;
 }
 
-.episode:hover, .season:hover, .menu-item:hover {
+.episode:hover, .season:hover, .menu-item:hover{
     background: #6C5748;
 }
 

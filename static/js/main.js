@@ -1,12 +1,13 @@
 // const entrance = document.getElementById("author"); //header
-// console.log(enter());
+// entrance.addEventListener("click", enter);
 // function enter() {
-//     if (entrance.style.display === 'block') {
-//         entrance.style.display = 'none';
-//     } else {
+//     if (entrance.style.display === 'none') {
 //         entrance.style.display = 'block';
+//     } else {
+//         entrance.style.display = 'none';
 //     }
 // }
+
 //watch page btns
 function getAll(selector) {
     return document.querySelectorAll(selector);
