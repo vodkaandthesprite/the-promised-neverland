@@ -37,6 +37,9 @@ a {
     color: #cbc5c1;
     list-style-type: none;
 }
+.menu-item:hover {
+    background: #6C5748;
+}
 
 #main {
     width: calc(608 / 1920 * 100vw);
