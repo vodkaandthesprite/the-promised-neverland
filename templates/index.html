@@ -7,15 +7,15 @@
     </head>
     <body>
     <header>
-        <ol class="menu">
-            <a href="/" target="_self"><li class="menu-item" id="main">Главная</li></a>
-            <a href="/watchpage" target="_self"><li class="menu-item" id="watch">Смотреть</li></a> <!--test js-->
-            <a href="/mangapage" target="_self"><li class="menu-item" id="manga">Манга</li></a>
-            <li class="menu-item" id="img2"></li>
-        </ol>
+        <ul class="menu">
+            <a href="/"><li id="main">Главная</li></a>
+            <a href="/watchpage"><li id="watch">Смотреть</li></a>
+            <a href="/mangapage"><li id="manga">Манга</li></a>
+            <li id="img2"></li>
+        </ul>
         <div id="author">
             <form action="">
-                <div id="enterance">Вход</div>
+                <div id="entrance">Вход</div>
                 <input id="email" class="ent-menu margin" type="text" placeholder="Электронная почта" >
                 <input id="password" class="ent-menu margin" type="text" placeholder="Пароль" >
                 <div id="trouble" class="margin">Проблемы со входом?</div>
@@ -26,9 +26,9 @@
         </div>
     </header>
     <section>
-        <h1 class="logo">Обещанный Неверленд</h1>
+        <h1 id="logo">Обещанный Неверленд</h1>
         <h2 id="logo-eng">The Promised Neverland</h2>
-        <div class="content">
+        <div>
             <p class="quote">
                 Нам не изменить нашего прошлого и
                 <br>
@@ -36,11 +36,12 @@
                 <br>
                 мы можем осуществить их мечты!
             </p>
-            <p class="quote quote-author">- Эмма</p>
-            <a href="/watchpage" target="_self"><button id="watch-bt">
+            <p class="quote" id="quote-author"=>- Эмма</p>
+            <button id="watch-bt">
+                <a href="/watchpage">
                 Смотреть<br/>сейчас
+                </a>
             </button>
-            </a>
         </div>
         </section>
     <footer>
