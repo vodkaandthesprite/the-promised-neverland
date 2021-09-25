@@ -1,13 +1,13 @@
 from flask import Flask, render_template
 from lib import *
-from my_templator import *
+import my_templator as temp
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def rt():
-    return render_template("index.html", Footer=footer)
+    return render_template("index.html", Footer=footer, Main=main, Watch=watch, Manga=manga)
 
 
 @app.route('/watchpage')
@@ -22,7 +22,7 @@ def manga():
 
 @app.route('/test')
 def test():
-    return render_template("test.html", heading=h(2, "button doesn't work"))
+    return render_template("test.html", template=temp)
 
 
 if __name__ == '__main__':
