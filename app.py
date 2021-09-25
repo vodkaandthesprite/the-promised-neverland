@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from lib import *
+from my_templator import *
 
 app = Flask(__name__)
 
@@ -21,7 +22,7 @@ def manga():
 
 @app.route('/test')
 def test():
-    return render_template("test.html")
+    return render_template("test.html", heading=h(2, "button doesn't work"))
 
 
 if __name__ == '__main__':

@@ -11,7 +11,7 @@ manga.name = "Манга"
 authorisation = MenuItem()
 
 
-class Footer():
+class Footer:
     pass
 
 
