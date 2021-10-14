@@ -19,6 +19,14 @@ function trigger(active) {
     function reColor() {
         console.log(active);
         let clickedClass = active.classList[0];
+        if (clickedClass === "season") {
+            let episodes = getAll(".episode")
+            episodes.forEach(makePassive); // all episodes
+            // function makePassive(element) {
+            //     element.classList.remove("active");
+            // }
+            episodes[0].classList.add("active");
+        }
         let elements = getAll(`.${clickedClass}`);
         elements.forEach(makePassive);
         function makePassive(element) {
