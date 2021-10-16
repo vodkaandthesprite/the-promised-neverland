@@ -9,9 +9,15 @@
 // }
 
 //watch page btns
+function get(selector) {
+    return document.querySelector(selector);
+}
 function getAll(selector) {
     return document.querySelectorAll(selector);
 }
+let defValue = localStorage.getItem("season");
+let defSeason = getAll(".season")[defValue - 1];
+defSeason.classList.add("active");
 const actives = getAll(".season, .episode");
 actives.forEach(trigger);
 function trigger(active) {
@@ -20,12 +26,12 @@ function trigger(active) {
         console.log(active);
         let clickedClass = active.classList[0];
         if (clickedClass === "season") {
+            let clickedValue = active.textContent.slice(-1) //get(".season").textContent.slice(-1)
+            localStorage.setItem("season", clickedValue)
             let episodes = getAll(".episode")
-            episodes.forEach(makePassive); // all episodes
-            // function makePassive(element) {
-            //     element.classList.remove("active");
-            // }
+            episodes.forEach(makePassive);
             episodes[0].classList.add("active");
+            // let clickedSeason =
         }
         let elements = getAll(`.${clickedClass}`);
         elements.forEach(makePassive);
