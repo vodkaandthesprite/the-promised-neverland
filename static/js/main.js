@@ -39,12 +39,14 @@ function trigger(active) {
         let clickedValue = active.textContent.slice(-2);
         if (clickedClass === "season") {
             localStorage.setItem("season", clickedValue)
+            localStorage.setItem("episode", "1")
             let episodes = getAll(".episode")
             episodes.forEach(makePassive);
             episodes[0].classList.add("active");
         } else {
             localStorage.setItem("episode", clickedValue)
         }
+
         let elements = getAll(`.${clickedClass}`);
         elements.forEach(makePassive);
         function makePassive(element) {
