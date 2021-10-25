@@ -15,9 +15,20 @@ function get(selector) {
 function getAll(selector) {
     return document.querySelectorAll(selector);
 }
-let defValue = localStorage.getItem("season");
-let defSeason = getAll(".season")[defValue - 1];
+if (localStorage.getItem("season") === null) {
+    localStorage.setItem("season", "1"); // sends a value to the local storage
+    localStorage.setItem("episode", "1");
+}
+
+let defValueS = localStorage.getItem("season");
+let defSeason = getAll(".season")[defValueS - 1];
+
+let defValueEp = localStorage.getItem("episode");
+let defEpisode = getAll(".episode")[defValueEp - 1];
+
 defSeason.classList.add("active");
+defEpisode.classList.add("active");
+
 const actives = getAll(".season, .episode");
 actives.forEach(trigger);
 function trigger(active) {
@@ -25,13 +36,14 @@ function trigger(active) {
     function reColor() {
         console.log(active);
         let clickedClass = active.classList[0];
+        let clickedValue = active.textContent.slice(-2);
         if (clickedClass === "season") {
-            let clickedValue = active.textContent.slice(-1) //get(".season").textContent.slice(-1)
             localStorage.setItem("season", clickedValue)
             let episodes = getAll(".episode")
             episodes.forEach(makePassive);
             episodes[0].classList.add("active");
-            // let clickedSeason =
+        } else {
+            localStorage.setItem("episode", clickedValue)
         }
         let elements = getAll(`.${clickedClass}`);
         elements.forEach(makePassive);
