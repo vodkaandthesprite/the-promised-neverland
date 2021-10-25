@@ -66,7 +66,7 @@ a {
 
 #img2 {
     width: calc(138 / 1920 * 100vw);
-    background-image: url("../img/user2.svg");
+    background-image: url("../img/main/user2.svg");
     background-size: cover;
     border-radius: 0 0 calc(20 / 1920 * 100vw) 0;
 }
@@ -74,7 +74,7 @@ a {
 section {
     width: calc(1415 / 1920 * 100vw);
     height: calc(819 / 1920 * 100vw);
-    background: url("../img/section.svg");
+    background: url("../img/main/section.svg");
     background-size: cover;
     margin-top: calc(72 / 1920 * 100vw);
     margin-right: calc(245 / 1920 * 100vw);
@@ -207,7 +207,7 @@ form {
     left: calc(130 / 1920 * 100vw);
     display: flex;
     justify-content: flex-end;
-    background: url("../img/google-ent.svg");
+    background: url("../img/main/google-ent.svg");
     background-size: cover;
     width: calc(195 / 1920 * 100vw);
     height: calc(45 / 1920 * 100vw);

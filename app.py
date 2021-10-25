@@ -1,6 +1,6 @@
 from flask import Flask, render_template
-from lib import *
-import my_templator as temp
+from static.py.lib import *
+from static.py import my_templator as temp
 
 app = Flask(__name__)
 

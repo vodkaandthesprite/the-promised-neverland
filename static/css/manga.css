@@ -59,7 +59,7 @@ a {
 
 #img2 {
     width: calc(138 / 1920 * 100vw);
-    background-image: url("../img/user2.svg");
+    background-image: url("../img/main/user2.svg");
     background-size: cover;
     border-radius: 0 0 calc(20 / 1920 * 100vw) 0;
 }
