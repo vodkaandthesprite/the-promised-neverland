@@ -141,7 +141,7 @@ h1 {
     width: calc(1116 / 1920 * 100vw);
     height: calc(570 / 1920 * 100vw);
     margin: 0;
-    background: #000000;
+    background-color: #000000;
 }
 
 #play {
