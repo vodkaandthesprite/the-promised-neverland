@@ -1,30 +1,11 @@
-<!DOCTYPE html>
-<html>
-   <head>
-        <meta charset="utf-8">
+{% extends "base.html" %}
+    {% block title %}
         <title>The Promised Neverland</title>
-        <link rel="stylesheet" href="../static/css/index.css">
-    </head>
-    <body>
-    <header>
-        <ul class="menu">
-            <a href="/"><li id="main">{{ Main.name }}</li></a>
-            <a href="/watchpage"><li id="watch">Смотреть</li></a>
-            <a href="/mangapage"><li id="manga">Манга</li></a>
-            <li id="img2"></li>
-        </ul>
-        <div id="author">
-            <form action="">
-                <div id="entrance">Вход</div>
-                <input id="email" class="ent-menu margin" type="text" placeholder="Электронная почта" >
-                <input id="password" class="ent-menu margin" type="text" placeholder="Пароль" >
-                <div id="trouble" class="margin">Проблемы со входом?</div>
-                <input class="btns margin" id="enter" type="submit" value="Войти">
-                <input class="btns margin" id="google" type="submit" value="Войти через Google">
-                <input class="btns" id="facebook" type="submit" value="Войти через Facebook">
-            </form>
-        </div>
-    </header>
+    {% endblock %}
+    {% block style %}
+    <link rel="stylesheet" href="../static/css/index.css">
+    {% endblock %}
+    {% block content %}
     <section>
         <h1 id="logo">Обещанный Неверленд</h1>
         <h2 id="logo-eng">The Promised Neverland</h2>
@@ -44,9 +25,8 @@
             </a>
         </div>
         </section>
-    <footer>
-        <p> {{ Footer.name }}</p>
-    </footer>
-    <script src="../static/js/main.js"></script>
-    </body>
-</html>
+    {% endblock content %}
+    {% block scripts %}
+        <script src="../static/js/authorisation.js"></script>
+    {% endblock %}
+

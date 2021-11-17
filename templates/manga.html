@@ -1,37 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>The Promised Neverland(manga page)</title>
-        <link rel="stylesheet" href="../static/css/manga.css">
-    </head>
-    <body>
-    <header>
-        <ol class="menu">
-            <a href="/" target="_self"><li class="menu-item" id="main">Главная</li></a>
-            <a href="/watchpage" target="_self"><li class="menu-item" id="watch">Смотреть</li></a> <!--test js-->
-            <a href="/mangapage" target="_self"><li class="menu-item" id="manga">Манга</li></a>
-            <li class="menu-item" id="img2"></li>
-        </ol>
-    </header>
+{% extends "base.html" %}
+{% block title %}
+    <title>The Promised Neverland(manga page)</title>
+{% endblock %}
+{% block style %}
+    <link rel="stylesheet" href="../static/css/manga.css">
+{% endblock %}
+{% block content %}
     <section>
-            <div id="frame">
-                <h1>Читать "Обещанный Неверленд" онлайн</h1>
-                <ul>
-                    <li class="explanation">Том, номер и название главы</li>
-                    <li class="explanation">Дата релиза</li>
-                </ul>
-                <div id="section-bg"></div>
-                <button>
-                    <div id="ar1" class="arrow"></div>
-                    Развернуть
-                    <div id="ar2" class="arrow"></div>
-                </button>
-            </div>
+        <div id="frame">
+            <h1>Читать "Обещанный Неверленд" онлайн</h1>
+            <ol>
+                <li class="explanation">Том, номер и название главы</li>
+                <li class="explanation">Дата релиза</li>
+            </ol>
+            <div id="section-bg"></div>
+            <button>
+                <div id="ar1" class="arrow"></div>
+                Развернуть
+                <div id="ar2" class="arrow"></div>
+            </button>
+        </div>
     </section>
-    <footer>
-        <p> {{ Footer.name }}</p>
-    </footer>
-    </body>
-    <script src="../static/js/main.js"></script>
-</html>
+{% endblock %}
+{% block scripts %}
+    <script src="../static/js/watch.js"></script>
+{% endblock %}

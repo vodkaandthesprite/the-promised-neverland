@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>The Promised Neverland(watch page)</title>
+{% extends "base.html" %}
+    {% block title %}
+        <title>The Promised Neverland(watch page)</title>
+    {% endblock %}
+    {% block style %}
     <link rel="stylesheet" href="../static/css/watch.css">
-    </head>
-    <body>
-        <header>
-            <ol class="menu">
-                <a href="/" target="_self"><li class="menu-item" id="main">Главная</li></a>
-                <a href="/watchpage" target="_self"><li class="menu-item" id="watch">Смотреть</li></a> <!--test js-->
-                <a href="/mangapage" target="_self"><li class="menu-item" id="manga">Манга</li></a>
-                <li class="menu-item" id="img2"></li>
-            </ol>
-        </header>
+    {% endblock %}
+    {% block content %}
         <section>
             <div id="frame">
                 <h1>Смотреть "Обещанный Неверленд" онлайн</h1>
@@ -24,8 +16,11 @@
                 </ol>
                 <div id="player">
                     <button id="play"></button>
+                    <video controls>
+                        video doesn't exist
+                    </video>
                 </div>
-                <video src="static/img/watch/vid/heart.mp4" controls>video doesn't exist</video>
+
                 <ol id="ep-menu">
                     <li class="episode active">Серия 1</li>
                     <li class="episode">Серия 2</li>
@@ -43,11 +38,7 @@
             </div>
             <div id="background"></div>
         </section>
-        <footer>
-            <p> {{ Footer.name }}</p>
-        </footer>
-        <script src="../static/js/main.js"></script>
-        <script src="../static/js/player.js"></script>
-{#        <script src="../static/js/test.js"></script>#}
-    </body>
-</html>
+    {% endblock %}
+    {% block scripts %}
+        <script src="../static/js/watch.js"></script>
+    {% endblock %}

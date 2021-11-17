@@ -1,76 +1,3 @@
-@font-face {
-    font-family: Montserrat;
-    src: url("../fonts/Montserrat-Light.ttf");
-}
-
-@font-face {
-    font-family: Old Standard TT;
-    src: url("../fonts/OldStandardTT-Regular.ttf");
-}
-
-@font-face {
-    font-family: Merriweather;
-    src: url("../fonts/Merriweather-LightItalic.ttf");
-}
-
-body {
-    margin: 0;
-    background: #cbc5c1;
-}
-
-header {
-    display: flex;
-    border-radius: 0 0 calc(20 / 1920 * 100vw) calc(20 / 1920 * 100vw);
-}
-
-ol {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-.menu-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    font-family: Montserrat;
-    font-size: calc(45 / 1920 * 100vw);
-    background: #5b5549;
-    color: #cbc5c1;
-    height:calc(125 / 1920 * 100vw);
-}
-
-a {
-    text-decoration: none;
-}
-
-#main {
-    width: calc(608 / 1920 * 100vw);
-    border-radius: 0 0 0 calc(20 / 1920 * 100vw) ;
-}
-
-#watch {
-    border: 0px solid #524d42;
-    border-right-width: 5px;
-    border-left-width: 5px;
-    width: calc(717 / 1920 * 100vw);
-}
-
-#manga {
-    width: calc(458 / 1920 * 100vw);
-}
-
-#img2 {
-    width: calc(138 / 1920 * 100vw);
-    background-size: cover;
-    background-image: url("../img/main/user2.svg");
-    border-radius: 0 0 calc(20 / 1920 * 100vw) 0;
-}
-
 section {
     background: url("../img/watch/section-bg.svg");
     background-size: cover;
@@ -110,7 +37,12 @@ h1 {
     align-items: center;
 }
 
+ol {
+    margin: 0;
+}
+
 .season, .episode {
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,12 +87,23 @@ h1 {
     background-size: cover;
 }
 
+video {
+    display: none;
+    width: calc(1116 / 1920 * 100vw);
+    height: calc(570 / 1920 * 100vw);
+}
+
+video:hover {
+    
+}
+
 .episode {
     margin-right: calc(14 / 1920 * 100vw);
     margin-top: calc(23 / 1920 * 100vw);
 }
 
 #ep-menu {
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -170,12 +113,11 @@ h1 {
     background: #6C5748;
 }
 
-footer {
-    text-align: center;
-    font-family: Montserrat;
-    width: calc(458 / 1920 * 100vw);
-    height: calc(28 / 1920 * 100vw);
-    font-size: calc(24 / 1920 * 100vw);
-    margin-right: calc(740 / 1920 * 100vw);
-    margin-left: calc(722 / 1920 * 100vw);
+#watch-bt:hover{
+    background: #6C5748;
+}
+
+#watch-bt:active{
+    background: #cbc5c1;
+    color: #524D42;
 }

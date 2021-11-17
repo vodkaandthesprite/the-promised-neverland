@@ -7,22 +7,24 @@ app = Flask(__name__)
 
 @app.route('/')
 def rt():
-    return render_template("index.html", Footer=footer, Main=main, Watch=watch, Manga=manga)
+    return render_template(
+        "index.html"
+    )
 
 
 @app.route('/watchpage')
 def watch():
-    return render_template("watch.html", Footer=footer)
+    return render_template("watch.html")
 
 
 @app.route('/mangapage')
 def manga():
-    return render_template("manga.html", Footer=footer)
+    return render_template("manga.html")
 
 
-@app.route('/test')
-def test():
-    return render_template("test.html", template=temp)
+@app.route('/base')
+def base():
+    return render_template("inherited.html")
 
 
 if __name__ == '__main__':
