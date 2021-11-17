@@ -1,0 +1,42 @@
+{% block base %}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        {% block title %}{% endblock %}
+    {% block mainstyle %}
+        <link rel="stylesheet" href="../static/css/main.css">
+    {% endblock %}
+    {% block style %}
+    {% endblock %}
+    </head>
+    <body>
+        {% block header %}
+        <header>
+            <ul class="menu">
+                <a href="/"><li id="main">Главная</li></a>
+                <a href="/watchpage"><li id="watch">Смотреть</li></a>
+                <a href="/mangapage"><li id="manga">Манга</li></a>
+                <li id="img2"></li>
+            </ul>
+            <div id="author">
+                <form action="">
+                    <div id="entrance">Вход</div>
+                    <input id="email" class="ent-menu margin" type="text" placeholder="Электронная почта" >
+                    <input id="password" class="ent-menu margin" type="text" placeholder="Пароль" >
+                    <div id="trouble" class="margin">Проблемы со входом?</div>
+                    <input class="btns margin" id="enter" type="submit" value="Войти">
+                    <input class="btns margin" id="google" type="submit" value="Войти через Google">
+                    <input class="btns" id="facebook" type="submit" value="Войти через Facebook">
+                </form>
+            </div>
+        </header>
+        {% endblock %}
+        {% block content %}{% endblock %}
+        {% block footer %}
+            <p>Powered by Mel. All rights reserved. ©</p>
+        {% endblock %}
+    {% block scripts %}{% endblock %}
+    </body>
+    </html>
+{% endblock %}
